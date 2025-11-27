@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Frenzy Devs - Elite Development Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/public/favicon.ico">
+</head>
+
+<body class="dark-mode">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-particles"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">FRENZY</span>
+                    <span class="title-line">DEVS</span>
+                </h1>
+                <p class="hero-subtitle">Elite Development Team</p>
+                <p class="hero-description">We are a crew of builders who thrive in controlled chaos—shipping fast,
+                    breaking limits, and turning wild ideas
+                    into working products.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <button class="control red" id="redControl"></button>
+                            <button class="control yellow" id="yellowControl"></button>
+                            <button class="control green" id="greenControl"></button>
+                        </div>
+                        <span class="window-title" style="user-select: none;">frenzy_devs.js</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code class="typing-code" id="typingCode"></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hacker Error Popup (Red Button) -->
+    <div class="popup-overlay" id="helloPopupOverlay">
+        <div class="code-window" style="margin: 18px; user-select: none;">
+            <div class="popup-header"
+                style="padding: 12px 24px; display: flex; justify-content: space-between; align-items: center;">
+                <h3 class="window-title" style="font-size: 16px; color: var(--text-secondary); font-weight: normal;">
+                    secret.py</h3>
+                <button class="popup-close" id="helloPopupClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div>
+                <pre id="terminalMessage" class="terminal-message" style="padding-left: 24px;"></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Popup (Yellow Button) -->
+    <div class="popup-overlay" id="aboutPopupOverlay">
+        <div class="popup" style="user-select: none;">
+            <div class="popup-header">
+                <h3>About Frenzy Devs</h3>
+                <button class="popup-close" id="aboutPopupClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="popup-content">
+                <div class="recruit-hero">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>404: Error!!</h4>
+                </div>
+                <p></p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">-∞</span>
+                        <span class="stat-label">Creativity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recruitment Popup (Green Button) -->
+    <div class="popup-overlay" id="recruitPopupOverlay">
+        <div class="popup" style="user-select: none;">
+            <div class="popup-header">
+                <h3>Join Frenzy Devs</h3>
+                <button class="popup-close" id="recruitPopupClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="popup-content">
+                <div class="recruit-hero">
+                    <i class="fas fa-users"></i>
+                    <h4>We're Recruiting!</h4>
+                </div>
+                <p style="text-align: center;">Think what we do is fun? Ready to push boundaries with us? Apply below
+                    and join the frenzy.
+                    Let's create amazing things together?</p>
+                <div class="requirements">
+                    <h5>[SKILLS]</h5>
+                    <ul>
+                        <li>Passion for coding & innovation</li>
+                        <li>Team player with killer communication</li>
+                        <li>Willingness to learn and grow as a team</li>
+                        <li>Creative problem-solving</li>
+                    </ul>
+                </div>
+                <div class="popup-actions">
+                    <button class="btn btn-primary" style="display: none;">Apply Now</button>
+                    <a class="btn btn-secondary" href="https://discord.com/invite/QcHQKYw2ex">Discord</a>
+                    <a class="btn btn-secondary" href="https://github.com/Frenzy-Devs/Frenzy-Devs.github.io"> <i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeBtn" class="theme-btn">
+            <img src="public/darkMode.svg" alt="Theme Toggle" class="theme-icon">
+        </button>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
